@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S2GSMDC", "S2GSMDC\S2GSMDC.csproj", "{7A919AE2-4717-4CF9-BAFE-5AB6E8D78621}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A919AE2-4717-4CF9-BAFE-5AB6E8D78621}.Debug|x86.ActiveCfg = Debug|x86
+		{7A919AE2-4717-4CF9-BAFE-5AB6E8D78621}.Debug|x86.Build.0 = Debug|x86
+		{7A919AE2-4717-4CF9-BAFE-5AB6E8D78621}.Release|x86.ActiveCfg = Release|x86
+		{7A919AE2-4717-4CF9-BAFE-5AB6E8D78621}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = S2GSMDC\S2GSMDC.csproj
+	EndGlobalSection
+EndGlobal
