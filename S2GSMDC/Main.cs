@@ -31,6 +31,7 @@ namespace S2GSMDC
 				}
 				*/
 
+                int successes = 0;
 				foreach(string file in args)
 				{
 					Console.WriteLine("Opening {0} for conversion...\n", file);
@@ -76,11 +77,13 @@ namespace S2GSMDC
 									}
 								}
 								*/
-								Match match = Regex.Match(line, @"0 (-*\d+\.?\d+ -*\d+\.?\d+ -*\d+\.?\d+ -*\d+\.?\d+ -*\d+\.?\d+ -*\d+\.?\d+ -*\d+\.?\d+ -*\d+\.?\d+) \d+ (\d+) .*$");
-								{
+								//Match match = Regex.Match(line, @"0 (-*\d+\.?\d+ -*\d+\.?\d+ -*\d+\.?\d+ -*\d+\.?\d+ -*\d+\.?\d+ -*\d+\.?\d+ -*\d+\.?\d+ -*\d+\.?\d+) \d+ (\d+) .*$");
+                                Match match = Regex.Match(line, @"\d+(?<vertex> +-?\d+\.\d+ +-?\d+\.\d+ +-?\d+\.\d+ +-?\d+\.\d+ +-?\d+\.\d+ +-?\d+\.\d+ +-?\d+\.\d+ +-?\d+\.\d+) +\d+ +(?<bone>\d+) +-?\d+\.\d+");
+                                {
 									if(match.Success)
 									{
-										line = match.Groups[2].Value + " " + match.Groups[1].Value;
+										line = match.Groups["bone"].Value + match.Groups["vertex"].Value;
+                                        successes++;
 									}
 								}
 								w.WriteLine(line);
@@ -90,6 +93,7 @@ namespace S2GSMDC
 					}
 				}
 				Console.WriteLine("All files converted.\nPress any key to exit.");  // {0} successes, {1} failures.", successes, failures);
+                Console.WriteLine(successes + " successes.");
 				//Console.WriteLine("Converting {0} failed.\n", file);
 				Console.Read();
 				Console.Read();
