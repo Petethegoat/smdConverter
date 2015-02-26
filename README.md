@@ -12,6 +12,8 @@ It converts Source style bone assignment to Goldsrc compatible style. I've succe
 Just drag a Source .smd onto S2GSMDC.exe, and go through the prompts. You can drag multiple files onto it at once. You may also use it from the command line.
 
 #####Changelog:#####
+* v0.3 26-2-15
+  Updated to work when converting .smds saved with Blender Source Tools 2.4.0.
 
 * v0.2 28-7-13
   Improved conversion- the stray vertices issue should be fixed.
