@@ -1,6 +1,6 @@
 ####Source to Goldsrc SMD Converter####
 
-Petethegoat - 28-7-13 - V0.2
+Petethegoat - 26-2-15 - V0.3
 https://github.com/Petethegoat/smdConverter
 
 This is designed as a substitute for Milkshape in the process of bringing a model from Blender (with the SMD Tools plugin) into Half-Life 1 and Goldsrc based mods. It should also be useful for Source .smds exported from other tools, and is by no means Blender specific.
